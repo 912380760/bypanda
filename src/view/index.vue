@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <top></top>
+    <div class="m-auto-1180" style="height:1000px;">
+      这是内容区域
+    </div>
     <foot></foot>
   </div>
 </template>
