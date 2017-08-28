@@ -3,12 +3,11 @@
     <div class="top-conter clear">
       <img src="../assets/logo.png" class="logo" alt="">
       <ul class="top-ul">
-        <li>javascript</li>
-        <li>jquery</li>
-        <li>css</li>
-        <li>vue</li>
-        <li>node</li>
-        <li>webpack</li>
+        <li>主页</li>
+        <li>javaScript</li>
+        <li>CSS</li>
+        <li>NodeJs</li>
+        <li>框架和插件</li>
       </ul>
     </div>
   </div>
