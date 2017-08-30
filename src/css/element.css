@@ -4013,14 +4013,14 @@
 .el-tooltip__popper[x-placement^=bottom] .popper__arrow {
   top: -6px;
   border-top-width: 0;
-  border-bottom-color: #1f2d3d
+  border-bottom-color:  #ffc81f;
 }
 
 .el-tooltip__popper[x-placement^=bottom] .popper__arrow::after {
   top: 1px;
   margin-left: -5px;
   border-top-width: 0;
-  border-bottom-color: #1f2d3d
+  border-bottom-color:  #ffc81f;
 }
 
 .el-tooltip__popper[x-placement^=right] {
@@ -4096,7 +4096,7 @@
 }
 
 .el-tooltip__popper.is-dark {
-  background: #1f2d3d;
+  background: #ffc81f;
   color: #fff
 }
 

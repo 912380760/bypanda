@@ -1,14 +1,26 @@
 <template lang="html">
   <div class="top">
     <div class="top-conter clear">
-      <img src="../assets/logo.png" class="logo" alt="">
+      <span class="logo icon iconfont icon-github1" ></span>
       <ul class="top-ul">
-        <li>主页</li>
-        <li>javaScript</li>
+        <li class="activate">Home</li>
+        <li>JavaScript</li>
         <li>CSS</li>
         <li>NodeJs</li>
-        <li>框架和插件</li>
+        <li>Frame</li>
       </ul>
+      <div class="top-my">
+        <a href="#" class="my">关于我</a>
+        <a href="https://www.zhihu.com/people/huang-zhi-long-22" target="_blank">
+          <span class="icon iconfont icon-zhihu zhihu"></span>
+        </a>
+        <el-tooltip placement="bottom">
+          <div slot="content">
+            <img src="../assets/top/微信.png" width="120" alt="">
+          </div>
+          <span class="icon iconfont icon-weixin weixin"></span>
+        </el-tooltip>
+      </div>
     </div>
   </div>
 </template>
@@ -23,23 +35,23 @@ export default {
 .top{
   width: 100%;
   height: 70px;
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,.05);
-  background: #fff;
+  background: #000;
 }
 .top-conter{
   width: 1180px;
   height: 70px;
+  background: #000;
   margin: 0 auto;
   position: relative;
 
   .logo{
-    width: auto;
-    height: 70px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: #ffc81f;
     float: left;
+    cursor: pointer;
   }
-
   .top-ul{
-    float: left;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -49,18 +61,57 @@ export default {
       line-height: 70px;
       font-size: 16px;
       margin-right: 60px;
-      color: #415967;
-      opacity: .8;
+      color: #fff;
       cursor: pointer;
 
       &:last-child{
         margin-right: 0;
       }
       &:hover{
-        opacity: 1;
+        color: #ffc81f;
+      }
+    }
+    li.activate{
+      color: #ffc81f;
+    }
+  }
+  .top-my{
+    float: right;
+
+    .my{
+      color: gray;
+      font-size: 14px;
+      line-height: 70px;
+      margin-right: 10px;
+
+      &:hover{
+        color: #ffc81f;
+      }
+    }
+    .zhihu{
+      color: gray;
+      cursor: pointer;
+      font-size: 17px;
+      line-height: 70px;
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+      &:hover{
+        color: #ffc81f;
+      }
+    }
+    .weixin{
+      color: gray;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 70px;
+      position: relative;
+      margin-right: 10px;
+      top: 2px;
+      &:hover{
+        color: #ffc81f;
       }
     }
   }
-
 }
 </style>
