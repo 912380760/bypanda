@@ -19,12 +19,13 @@
     },
     data() {
       return {
-        interval: 0,
+        // 播放速度，越大越慢
+        interval: 10,
         currentStyle: '',
         enableHtml: false,
         fullStyle: [
           `/*
-* 大家好，我是黄志龙
+* 大家好，我是Lucien
 * 三月了，好多公司都在招聘，你是不是也在准备简历呀。
 * 说做就做，我也来写一份简历！
 */
@@ -110,7 +111,7 @@ html{
 }
 `],
         currentMarkdown: '',
-        fullMarkdown: `黄志龙
+        fullMarkdown: `Lucien
 ----
 
 现在在 [数字尾巴](http://dgtle.com) 担任高级前端开发工程师。
@@ -118,20 +119,24 @@ html{
 技能
 ----
 
-* 熟练掌握HTML5+CSS3新特性，根据W3C标准像素级实现设计图。
+* 熟练掌握 HTML5+CSS3新特性，根据 W3C 标准像素级实现设计图。
 * 熟练掌握的移动端页面开发、自适应布局、响应式布局、弹性布局，能够处理移动端页面在不同机
 型中的兼容问题
-* 熟练掌握微信页面的开发、微信相关SDK
-* 熟练掌握PC端开发，熟悉不同浏览器的差异，能处理Chrome、Safari、Firefox、IE等浏览器的
+* 熟练掌握微信页面的开发、微信相关 SDK
+* 熟练掌握 PC 端开发，熟悉不同浏览器的差异，能处理 Chrome、Safari、Firefox、IE 等浏览器的
 兼容问题
-* 熟练掌握Vue、Angular等前端框架
-* 熟练掌握ES5、ES6、jQuery
-* 熟练掌握git、svn版本管理工具
-* 熟练掌握AJAX、Cookie、LocalStorage、SessionStorage
-* 熟练掌握ElementUi、Bootstrap、Axios、Zepto、iScroll、Swiper、fullPage、EChart等前端插件
-* 熟悉Webpack、Gulp、NPM、Node等前端构建工具和环境
-* 熟悉Less、Sass等CSS预处理器
-* 熟悉Radio、Video、Canvas、SVG等H5新API
+* 熟练掌握 Vue、Angular 等主流前端框架
+* 熟练掌握 vue-router、vue-lazyload、vuex、vee-validate、vue-resource 等 Vue 插件
+* 熟练掌握 ES5、ES6、jQuery
+* 熟练掌握 git、svn 版本管理工具
+* 熟练掌握 AJAX、Cookie、LocalStorage、SessionStorage
+* 熟练掌握 ElementUi、Bootstrap、Axios、Zepto、iScroll、Swiper、fullPage、EChart 等插件
+* 熟悉 Webpack、Gulp、NPM、Node 等前端构建工具和环境
+* 熟悉 Less、Sass 等 CSS 预处理器
+* 熟悉 Radio、Video、Canvas、SVG 等 H5新 API
+* 熟悉性能优化，性能检测，客户端检测等技术
+* 熟悉谷歌、火狐、IE、Safari 等开发者工具
+* 了解百度、微信、QQ、优酷、保利威视等 SDK
 * 了解正则表达式、网站 SEO 优化、HTTP 协议
 
 工作经历
@@ -146,43 +151,62 @@ html{
 实现 ui 设计师提供的设计图，持续跟进项目的迭代和维护。 2017.04-至今
 
 作为新出行手足兄弟网站，专注豪华车分享体验平台。项目拥有新出行的所有功能，并再基础上使用全新的 框架，运用 MVVM 模式进行开发。
-1. 使用 vue 作为核心框架，使用 vuex 插件实现全局状态的管理;
-2. 使用 vue-router 实现路由功能，从而达到页面切换;
-3. pc 端上的 UI 框架使用饿了么的 ElementUI 框架，WAP 上使用 VUX 框架;
-4. 作为单页面应用网站，实现了路由懒加载和图片懒加载的功能;
-5. 使用包管理工具(npm)和自动化打包工具(webpack)进行模块化开发;
-6. 使用 less 进行预编译，使用 git 进行代码管理。
+PC 端：
+* 使用 vue 服务端渲染，node 作为中间层搭建，为了解决单页面网站 SEO 问题；
+* 使用 ElementUI 框架作为 css 框架；
+* 使用 vue-router 管理路由，并实现路由懒加载，路由重定向等；
+* 使用 vuex 实现数据状态的管理；
+* 使用 vue-lazyload 实现图片懒加载，优化浏览性能；
+* 使用 photoswipe 实现点击图片展现查看大图相册效果；
+* 使用 vee-validate 处理表单验证；
+* 使用 vue-awesome-swiper 实现首页3D 轮播图；
+* 使用 vue-core-image-upload 实现用户头像裁剪；
+* 使用 vue-infinite-loading 实现搜索页滚动加载更多；
+* 使用 vue-resource 作为 http 请求；
+* 使用 less 进行 CSS 预编译；
+* 接入百度分享 API，可以分享到微博、QQ、微信等；
+* 接入优酷 API 播放文章视频；
+* 使用百度编辑器实现编辑、发布文章；
+* 接入站长之家统计流量；
+* 使用 npm 包管理和 webpack 打包工具进行开发；
+* 使用 git 进行代码管理；
+WAP 端使用技术和 PC 端大致相同，主要区别在于：
+* 使用 vue-cli 脚手架搭建；
+* 使用自适应布局适配手机和平板；
+* 接入微信 API，可分享到朋友圈，发送给朋友等；
+* 使用七牛云压缩图片；
+* WAP 文章详情页内嵌入鲸跃汽车 APP 中。
 
 #### [新出行](https://www.xchuxing.com)(官网和 WAP)
 实现 ui 设计师提供的设计图，持续跟进项目的迭代和维护。 2016.06-至今
 
 新出行是一个提供全面的新能源汽车体验分享平台，具有汽车体验、生活方式、线上报名活动以及直播车展 等;
-1. 使用 jQurey 作为核心框架，页面采用 rem 进行布局;
-2. 使用 HTML5的 LocalStorage 缓存技术实现页面的数据缓存;
-3. 用到 swiper、animate.css、HTML5+CSS3实现页面交互; 
-4. 使用 less 进行预编译。
+* 使用 jQurey 作为核心框架，页面采用 rem 进行布局;
+* 使用 HTML5的 LocalStorage 缓存技术实现页面的数据缓存;
+* 用到 swiper、animate.css、HTML5+CSS3实现页面交互; 
+* 使用 less 进行预编译。
 
 #### [数字尾巴](https://www.dgtle.com)(官网和 WAP)
 
 实现 ui 设计师提供的设计图，持续跟进项目的迭代和维护。2015.08-至今
 
 数字尾巴是一个分享数码产品的使用体验的平台，拥有着上百万的用户量。每日拥有数万人的访问量。 
-1. 使用 jQurey 作为核心框架完成页面交互效果，页面动态效果;
-2. 使用 template.js 模板引擎进行页面数据渲染;
-3. 使用图片懒加载功能显示商品提高页面的响应速度;
-4. 引入了 iScroll、Swiper 等插件实现轮播图、页面部分内容的滚动; 
-5. 使用 less 进行预编译，使用 git 进行代码管理以及版本的迭代。
+* 使用 jQurey 作为核心框架完成页面交互效果，页面动态效果;
+* 使用 template.js 模板引擎进行页面数据渲染;
+* 使用图片懒加载功能显示商品提高页面的响应速度;
+* 引入了 iScroll、Swiper 等插件实现轮播图、页面部分内容的滚动; 
+* 使用 less 进行预编译，使用 git 进行代码管理以及版本的迭代。
 
 #### 深圳房地产经纪行业协会综合服务系统(PC、微信端)
 主要负责 PC 端“协会”模块和微信端 2014.07-2015.07
 
 本项目是为深圳房地产中介协会开发的服务管理系统。
-1. 使用 AngularJS+Bootstrap 搭建，前后端分离式团队开发，使用 SVN 管理项目代码; 
-2. 使用 Respond.js、html5.js、es5-shim.min.js 插件兼容 IE6、7、8;
-3. 使用到 Animate.css 实现常用过渡动画;
-4. 使用 ocLazyLoad.js 实现按需加载;
-5. 使用 angular-locale_zh-cn.js 实现日期选框;
-6. 使用保利卫视和乐视 Tv 视频插件提供视频播放和断点续播。
+* 使用 AngularJS+Bootstrap 搭建，前后端分离式团队开发，使用 SVN 管理项目代码; 
+* 使用 Respond.js、html5.js、es5-shim.min.js 插件兼容 IE6、7、8;
+* 使用到 Animate.css 实现常用过渡动画;
+* 使用 ocLazyLoad.js 实现按需加载;
+* 使用 angular-locale_zh-cn.js 实现日期选框;
+* 使用保利卫视和乐视 Tv 视频插件提供视频播放和断点续播。
 `
       }
     },

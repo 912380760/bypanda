@@ -3,6 +3,12 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 
+const width = document.documentElement.clientWidth;
+import Resume from '@/pages/resume'
+import Mobile from '@/pages/Mobile'
+
+
+
 export default new Router({
   mode: 'history',  // 去#号
   routes: [
@@ -29,7 +35,12 @@ export default new Router({
     {
       path: '/resume',
       name: 'Resume',
-      component: resolve => require(['@/pages/resume'], resolve),
+      component: width > 600 ? Resume : Mobile,
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: resolve => require(['@/pages/test'], resolve),
     },
   ],
 });

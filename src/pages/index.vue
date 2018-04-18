@@ -40,7 +40,7 @@
         <div class="is-fixed">
           <div class="Card" style="height: 250px;padding: 0 10px;">
             <img src="../assets/images/index/shuai.png" class="loginImg" alt="">
-            <h4 class="introduceH1">Dragon</h4>
+            <h4 class="introduceH1">Lucien</h4>
             <p class="introduceP">
               如果说我看得比别人更远些，那是因为我站在巨人的肩膀上。
               <br>
@@ -56,16 +56,16 @@
           </div>
           <div class="Card about-my" style="height: 290px;">
             <div class="footer-right">
-              <h3 style="margin-bottom: 20px;">AROUND THE WEB</h3>
-              <ul>
+              <div>
+                <a href="https://pages.coding.me" target="_blank">
+                  <img src="../assets/images/index/coding.png" alt="">
+                </a>
+                
+              </div>
+              <!-- <ul>
                 <li>
                   <a href="https://github.com/912380760" target='_blank'>
                     <i class="fa fa-fw fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/%E5%BF%97%E9%BE%99-%E9%BB%84-6b880110a/" target='_blank'>
-                    <i class="fa fa-fw fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
@@ -84,7 +84,7 @@
                     </a>
                   </el-tooltip>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <!-- <div class="Card" style="height: 290px;">
@@ -302,6 +302,23 @@ export default {
         color: #fff;
       }
     }
+  }
+}
+
+// 移动端自适应
+@media (max-width: 600px) {
+  .Topstory-container {
+    width: 100%;
+  }
+  .TopstorySideBar{
+    display: none;
+  }
+  .TopstoryMain{
+    width: 100%;
+  }
+  .Topstory-mainColumn{
+    width: 100%;
+    margin-right: 0;
   }
 }
 </style>

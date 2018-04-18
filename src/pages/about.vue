@@ -111,11 +111,6 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/%E5%BF%97%E9%BE%99-%E9%BB%84-6b880110a/" target='_blank'>
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
                 <el-tooltip placement="top">
                   <div slot="content"><img src="../assets/images/index/WXHY.png" style="width: 160px;" alt=""></div>
                   <a href="javascript:;">
@@ -458,5 +453,47 @@ export default {
       }
     }
   }
+
+// 移动端自适应
+@media (max-width: 600px) {
+  .about{
+    width: 100%;
+    padding-top: 100px;
+
+    .about-left{
+      padding: 40px;
+    }
+  }
+  .about-right{
+    display: none;
+  }
+
+  .title-box{
+    width: 100%;
+  }
+  
+  .por .por-content{
+    width: 100%;
+    padding: 0;
+
+    li{
+      padding: 0 10px 0;
+      width: 100%;
+    }
+  }
+  .contact{
+    display: none;
+  }
+  .footer .footer-about{
+    width: 100%;
+  }
+  .footer-left{
+    padding: 0;
+    padding-right: 20px;
+  }
+  .footer-right{
+    padding: 0;
+  }
+}
 </style>
 

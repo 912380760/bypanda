@@ -322,5 +322,11 @@ export default {
   z-index: -1;
   background: #eee;
 }
+
+@media (max-width: 600px) {
+  .canvas {
+    display: none;
+  }
+}
 </style>
 
